@@ -1,0 +1,49 @@
+.item {
+    border-width: 1;
+    border-color: gray;
+    padding: 5;
+}
+
+.title {
+    font-size: 18;
+    margin: 3;
+    horizontal-align: left;
+}
+
+.author {
+    font-size: 14;
+    color: gray;
+    horizontal-align: left;
+    vertical-align: bottom;
+    margin: 3;
+    text-transform: lowercase;
+}
+
+.comments {
+    color: #10C2B0;
+    font-size: 14;
+    vertical-align: bottom;
+    margin: 3;
+}
+
+.thumbnail {
+    width: 72;
+    height: 72;
+    margin: 3;
+    vertical-align: top;
+    border-width: 2;
+    border-color: gray;
+}
+
+TabView {
+    background-color: white;
+}
+
+.about {
+    color: white;
+    font-size: 18;
+    border-width: 2;
+    border-color: black;
+    background-color: gray;
+    padding: 5;
+}

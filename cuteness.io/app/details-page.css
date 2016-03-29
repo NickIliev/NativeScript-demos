@@ -1,0 +1,26 @@
+Page {
+    background-color: #363940;
+}
+
+.detailsTitle {
+    color: #FFFFFF;
+    font-size: 30;
+    margin: 10;
+}
+
+.detailsCategory {
+    color: #AAAAAA;
+    font-size: 14;
+    margin: 10;
+}
+
+.detailsinfo {
+    color: #AAAAAA;
+    font-size: 20;
+    padding: 5;
+}
+ 
+ActivityIndicator {
+    width: 50;
+    height: 50;
+}

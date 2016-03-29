@@ -1,0 +1,4 @@
+<Page loaded="onPageLoaded">
+  <ListPicker items="{{ items }}" selectedIndex="{{ selectedIndex }}"
+              verticalAlignment="center" horizontalAlignment="center"/>
+</Page>

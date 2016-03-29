@@ -1,0 +1,7 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" >
+  <StackLayout>
+    <Button text="button 1" style="background-color: red; margin: 5;"/>
+    <Button text="button 2" style="background-color: lightblue; margin: 5;"/>
+    <Button text="button 3" style="background-color: lightgreen; margin: 5;"/>
+  </StackLayout>
+</Page>

@@ -1,0 +1,3 @@
+<Page>
+  <TextField verticalAlignment="center" horizontalAlignment="center" width="300" hint="Enter text..."/>
+</Page>

@@ -1,0 +1,3 @@
+<Page>
+  <Button text="button" verticalAlignment="center" horizontalAlignment="center"/>
+</Page>

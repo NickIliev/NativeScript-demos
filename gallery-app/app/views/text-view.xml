@@ -1,0 +1,5 @@
+<Page>
+  <TextView verticalAlignment="center" horizontalAlignment="center"
+            width="300" height="300"
+            text="The quick brown fox jumps over the lazy dog."/>
+</Page>

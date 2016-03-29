@@ -1,0 +1,8 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onPageLoaded">
+    <StackLayout id="stack">
+        <Button text="tap" id="button" tap="onTap" />
+        <Label text="{{ text }}" id="label" textWrap="true" />
+        <TextField id="textField" text="text-field" />
+        <TextView id="textView" text="text-view" />      
+    </StackLayout>
+</Page>
