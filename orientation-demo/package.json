@@ -1,0 +1,15 @@
+{
+	"nativescript": {
+		"id": "org.nativescript.orientationdemo",
+		"tns-android": {
+			"version": "1.7.1"
+		}
+	},
+	"dependencies": {
+		"tns-core-modules": "1.7.1"
+	},
+	"devDependencies": {
+		"nativescript-dev-typescript": "^0.3.0",
+		"typescript": "^1.8.9"
+	}
+}
