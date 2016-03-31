@@ -10,7 +10,6 @@ function pageLoaded(args) {
 exports.pageLoaded = pageLoaded;
 function imageLoaded(args) {
     var image = args.object;
-    console.log(__dirname);
     var logoPath = fs.path.join(__dirname, "tagLine.png");
     image.imageSource = imageSourceDef.fromFile(logoPath);
 }

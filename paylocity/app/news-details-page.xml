@@ -1,0 +1,26 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatedTo="pageNavigatedTo">
+  <GridLayout rows="*, auto">
+    <ScrollView>
+      <StackLayout>
+          <Label text="{{ id }}" textWrap="true" />
+        <Label text="{{ subreddit ? 'Category: ' + subreddit : '' }}" class="detailsCategory" textWrap="true" />
+        <Image imageSource="{{ imageSource }}" stretch="aspectFill"/>
+        <Label text="{{ title }}" class="detailsTitle" textWrap="true" />
+      </StackLayout>
+    </ScrollView>
+    <StackLayout orientation="horizontal" row="1">
+      <Label margin="2"  class="detailsinfo">
+        <Label.formattedText>
+          <FormattedString>
+            <FormattedString.spans>
+              <Span text="{{ author ? 'by ' + author : '' }}"/>
+              <Span text="{{ num_comments ? ' | ' : '' }}" />
+              <Span text="{{ num_comments ? num_comments + ' comments' : '' }}" foregroundColor="#10C2B0"/>
+            </FormattedString.spans>
+          </FormattedString>
+        </Label.formattedText>
+      </Label>
+    </StackLayout>
+    <ActivityIndicator busy="{{ isLoading }}" />
+  </GridLayout>
+</Page>

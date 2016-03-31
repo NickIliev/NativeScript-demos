@@ -5,3 +5,7 @@
 .passwordField {
     font-size: 12;
 }
+
+ListView {
+    font-size: 24;
+}

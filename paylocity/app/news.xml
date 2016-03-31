@@ -1,3 +1,15 @@
-<Page>
-  <ListView loaded="listViewLoaded" itemLoading="listViewItemLoading" />
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <ListView items="{{ redditItems }}" isScrolling="{{ isScrolling }}" itemTap="listViewItemTap" loadMoreItems="listViewLoadMoreItems" >
+        <ListView.itemTemplate >
+            <!-- Binding in template property of an component will use the bindingContext provided by the component. -->
+            <GridLayout columns="20, auto, *, auto" rows="auto, 25"  class="item">    
+                <Label text="{{ id }}" textWrap="true"  rowSpan="2" class="counter"/>   
+                <Image src="{{ thumbnailImage }}" class="thumbnail" col="1" rowSpan="2"/>
+                <Label text="{{ title || 'Downloading...' }}" textWrap="true" class="title" col="2" colSpan="2" minHeight="50" />
+                <Label text="{{ author ? 'by ' + author : '' }}" class="author" col="2" row="1" />
+                <Label text="{{ num_comments ? num_comments + ' comments' : '' }}" class="comments" col="3" row="1" />
+            </GridLayout>
+            <!-- End of tempplate. -->
+        </ListView.itemTemplate>
+    </ListView>
 </Page>

@@ -12,7 +12,7 @@ export function pageLoaded(args: observable.EventData) {
 
 export function imageLoaded(args: observable.EventData) {
     var image = <imageDef.Image>args.object;
-    console.log(__dirname);
+
     var logoPath = fs.path.join(__dirname, "tagLine.png");
     image.imageSource = imageSourceDef.fromFile(logoPath);
 }

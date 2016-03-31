@@ -1,18 +1,48 @@
-import observable = require("data/observable");
-import listViewDef = require("ui/list-view");
-import labelDef = require("ui/label");
+import { Observable, EventData } from "data/observable";
+import { VirtualArray, ItemsLoading } from "data/virtual-array";
 
-export function listViewLoaded(args: observable.EventData) {
-    var listView = <listViewDef.ListView>args.object;
-    listView.items = new Array(1000);
+import frameModule = require("ui/frame");
+import listViewModule = require("ui/list-view");
+import labelModule = require("ui/label");
+
+import { AppViewModel } from "./reddit-app-view-model";
+
+var appViewModel = new AppViewModel();
+let topmost;
+let page;
+
+export function pageLoaded(args: EventData) {
+    // Get the event sender
+    page = <Page>args.object;
+    page.bindingContext = appViewModel;
+    
+    topmost = frameModule.topmost();
+
+    // Enable platform specific feature (in this case Android page caching)
+    if (topmost.android) {
+        topmost.android.cachePagesOnNavigate = true;
+    }
 }
 
-export function listViewItemLoading(args: listViewDef.ItemEventData) {
-    var label = <labelDef.Label>args.view;
-    if (!label) {
-        label = new labelDef.Label();
-        args.view = label;
-    }
+export function listViewLoadMoreItems(args: EventData) {
+    console.log('loadMoreItems fired!')
+    // Increase model items length with model items loadSize property value
+    appViewModel.redditItems.length += appViewModel.redditItems.loadSize;
+}
 
-    label.text = "News " + args.index;
+export function listViewItemTap(args: ListViewItemEventData) {
+    // Navigate to the details page with context set to the data item for specified index
+    topmost.navigate({
+        moduleName: "./news-details-page",
+        context: appViewModel.redditItems.getItem(args.index)
+    });
+    
+    // var model = appViewModel.redditItems.getItem(args.index);
+    // for (var x in model){
+    //     if (model.hasOwnProperty(x)) {
+    //         console.log('Property name: ' + x);    
+    //         console.log('Property value ' + model[x]);
+    //         console.log('---------------------------')          
+    //     }
+    // }
 }
