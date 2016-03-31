@@ -1,0 +1,13 @@
+<Page loaded="onPageLoaded">
+    <GridLayout rows="auto, auto" columns="auto">
+        <StackLayout id="stack" row="0">
+            <Button id="button" text="GO!" height="50" width="100" tap="onTap"/>
+            <Label id="label" text="{{ selectedIndex + 1 }}" height="50" width="100" />
+            <ListPicker id="listPicker" selectedIndex="{{ selectedIndex }}" items="{{ items }}"/>
+            <DatePicker id="datePicker" day="{{ day }}" month="{{ month }}" year="{{ year }}"/>
+        </StackLayout>
+        <DockLayout row="1">
+            <TimePicker id="timePicker" hour="{{ hour }}" minute="{{ minute }}"/>
+        </DockLayout>
+    </GridLayout>
+</Page>

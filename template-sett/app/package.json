@@ -1,0 +1,53 @@
+{
+  "name": "tns-template-settings",
+  "main": "app.js",
+  "version": "1.7.0",
+  "author": {
+    "name": "Telerik",
+    "email": "support@telerik.com"
+  },
+  "description": "Nativescript settings project template",
+  "license": "BSD",
+  "keywords": [
+    "telerik",
+    "mobile",
+    "nativescript",
+    "{N}",
+    "tns",
+    "appbuilder",
+    "template"
+  ],
+  "repository": {
+    "url": "https://github.com/NativeScript/NativeScript/commit/391f014232b382c91760bc5091d14333dbde93e3"
+  },
+  "_id": "tns-template-settings@1.7.0",
+  "_shasum": "273879b3125bbce21053ec7ef19d78955b768cad",
+  "_resolved": "https://registry.npmjs.org/tns-template-settings/-/tns-template-settings-1.7.0.tgz",
+  "_from": "tns-template-settings@latest",
+  "scripts": {},
+  "_npmVersion": "3.3.12",
+  "_nodeVersion": "5.4.1",
+  "_npmUser": {
+    "name": "erjangavalji",
+    "email": "erjan.gavalji@gmail.com"
+  },
+  "dist": {
+    "shasum": "273879b3125bbce21053ec7ef19d78955b768cad",
+    "tarball": "https://registry.npmjs.org/tns-template-settings/-/tns-template-settings-1.7.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "enchev",
+      "email": "vladimir.enchev@gmail.com"
+    },
+    {
+      "name": "erjangavalji",
+      "email": "erjan.gavalji@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-13-west.internal.npmjs.com",
+    "tmp": "tmp/tns-template-settings-1.7.0.tgz_1458130314332_0.47587026352994144"
+  },
+  "directories": {}
+}
