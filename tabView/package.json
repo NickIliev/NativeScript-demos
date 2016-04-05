@@ -1,6 +1,6 @@
 {
 	"nativescript": {
-		"id": "org.nativescript.tabviewdemo",
+		"id": "org.nativescript.tabView",
 		"tns-android": {
 			"version": "1.7.1"
 		}
