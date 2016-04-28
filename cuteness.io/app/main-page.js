@@ -7,8 +7,6 @@ function pageLoaded(args) {
     // Get the event sender
     var page = args.object;
     page.bindingContext = appViewModel;
-    console.log(appViewModel.redditItems.length);
-    console.log(appViewModel.redditItems.loadSize);
     // Enable platform specific feature (in this case Android page caching)
     if (frame_1.topmost().android) {
         frame_1.topmost().android.cachePagesOnNavigate = true;
