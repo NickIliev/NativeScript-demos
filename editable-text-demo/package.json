@@ -1,13 +1,16 @@
 {
 	"nativescript": {
 		"id": "org.nativescript.editabletextdemo",
-		"tns-android": {
-			"version": "1.7.1"
+		 "tns-android": {
+			"version": "2.1.1"
+		},
+		"tns-ios": {
+			"version": "2.1.0"
 		}
-	},
-	"dependencies": {
-		"tns-core-modules": "1.7.1"
-	},
+  },
+  "dependencies": {
+    "tns-core-modules": "2.1.0"
+  },
 	"devDependencies": {
 		"nativescript-dev-typescript": "^0.3.0",
 		"typescript": "^1.8.9"
